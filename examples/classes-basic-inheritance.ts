@@ -1,4 +1,4 @@
-namespace ClassesBasicInheritance {
+{
   class Vehicle {
     drive(): void {
       console.log('chugga chugga');
@@ -9,15 +9,13 @@ namespace ClassesBasicInheritance {
     }
   }
 
-  export class Car extends Vehicle {
+  class Car extends Vehicle {
     drive(): void {
       console.log('vroom');
     }
   }
-}
 
-{
-  const car = new ClassesBasicInheritance.Car();
+  const car = new Car();
   car.drive();
   car.honk();
 }

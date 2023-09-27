@@ -1,5 +1,5 @@
-namespace ClassesClasses {
-  export class Vehicle {
+{
+  class Vehicle {
     drive(): void {
       console.log('chugga chugga');
     }
@@ -8,10 +8,8 @@ namespace ClassesClasses {
       console.log('beep');
     }
   }
-}
 
-{
-  const vehicle = new ClassesClasses.Vehicle();
+  const vehicle = new Vehicle();
   vehicle.drive();
   vehicle.honk();
 }
